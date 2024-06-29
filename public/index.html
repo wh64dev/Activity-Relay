@@ -6,18 +6,65 @@
 
 	<link rel="stylesheet" href="/style/globals.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<title>Charlotte Relay README</title>
+	<title>Charlotte ActivityPub Relay</title>
 </head>
 <body>
-<header>
-	<h1>Charlotte Relay</h1>
-	<p class="description">Charlotte 분산 연합 네트워크 릴레이 서비스 입니다.</p>
-</header>
 <nav>
 	<a href="#"><h2 class="title">Charlotte Relay</h2></a>
 	<div class="actions">
-		<a href="https://charlottepro.org"><i class="bi bi-globe-asia-australia"></i></a>
+		<a href="https://charlottepro.org">
+			<i class="bi bi-globe-asia-australia"></i>
+		</a>
 	</div>
 </nav>
+<header>
+	<h1>Charlotte Relay</h1>
+	<p class="description">Charlotte 분산 연합 네트워크 릴레이 서비스 입니다.</p>
+	<a href="#how_to_join" class="button" id="started">Get Started</a>
+</header>
+<div id="how_to_join">
+	<h1>How to Join</h1>
+	<div class="sector">
+		<div>
+			<h4>Mastodon or Misskey</h4>
+			<p>마스토돈 또는 Misskey 관리자는 릴레이 설정에서 아래의 URL을 추가 하시면 됩니다.</p>
+		</div>
+		<code class="instructor">
+			https://relay.charlottepro.org/inbox
+		</code>
+	</div>
+	<div class="sector">
+		<div>
+			<h4>Pleroma</h4>
+			<p>Pleroma 관리자는 릴레이 설정에서 아래의 URL을 추가 하시면 됩니다.</p>
+		</div>
+		<code class="instructor">
+			https://relay.charlottepro.org/actor
+		</code>
+	</div>
+</div>
+<div id="server_list">
+	<h1>Joined Server</h1>
+	<a href="https://galaxyrailway.link/about" class="server">
+		<img class="server_image" src="./img/sweet_sheep.png" alt="" />
+		<div class="server_description">
+			<h3>은하철도</h3>
+			<span>
+				은하철도999를 모티브로 한 철도와 자유주제를 다루는 "유저중심" 인스턴스
+			</span>
+		</div>
+	</a>
+	<a href="https://social.wh64.net/about" class="server">
+		<img class="server_image" src="./img/WH64_cute.png" alt="" />
+		<div class="server_description">
+			<h3>쪼의 평화로운 마스토돈 서버</h3>
+			<span>
+				평범한 친목을 위한 마스토돈 서버입니다.
+				쪼의 평화로운 마스토돈 서버에서는 다양한 주제로 대화를 나눌 수 있습니다.
+			</span>
+		</div>
+	</a>
+</div>
+<footer>&copy; Copyright 2024. Charlotte Project All Rights Reserved. Powered by <a class="link" href="https://github.com/yukimochi/Activity-Relay">Activity-Relay</a>.</footer>
 </body>
 </html>
