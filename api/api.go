@@ -70,6 +70,10 @@ func initialize(globalConfig *models.RelayConfig) error {
 }
 
 func handlersRegister() {
+	static := http.FileServer(http.Dir("public"))
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		static.ServeHTTP(w, r)
+	})
 	http.HandleFunc("/.well-known/nodeinfo", handleNodeinfoLink)
 	http.HandleFunc("/.well-known/webfinger", handleWebfinger)
 	http.HandleFunc("/nodeinfo/2.1", handleNodeinfo)
